@@ -19,7 +19,7 @@ io.on("connection", (socket) => {
     console.log("Message Received ", data); // Log the received message data
     // Emit the received message data to all connected clients
     io.emit("server-Message", {
-      message: "Hello Client!",
+      message: "Hello Clients!",
     });
   });
 });
